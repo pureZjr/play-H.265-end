@@ -1,0 +1,35 @@
+{
+    "name": "play-H.265-end",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "start": "npm run dev && tsc -w & nodemon dist/app.js",
+        "dev": "webpack --config ./webpack.config.development.js --watch"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "koa": "^2.8.1",
+        "koa-body": "^4.1.1",
+        "koa-static": "^5.0.0",
+        "qiniu": "^7.2.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.0",
+        "@types/koa-bodyparser": "^4.3.0",
+        "@types/koa-router": "^7.0.42",
+        "@types/koa-static": "^4.0.1",
+        "@types/qiniu": "^7.0.1",
+        "babel-loader": "^8.0.6",
+        "externals-dependencies": "^1.0.4",
+        "koa-bodyparser": "^4.2.1",
+        "koa-cors": "^0.0.16",
+        "koa-router": "^7.4.0",
+        "nodemon": "^1.19.2",
+        "ts-loader": "^6.1.2",
+        "typescript": "^3.6.3",
+        "webpack": "^4.40.2",
+        "webpack-cli": "^3.3.9",
+        "webpack-dev-server": "^3.8.1",
+        "webpack-node-externals": "^1.7.2"
+    }
+}
