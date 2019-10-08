@@ -3,6 +3,9 @@ import axios from 'axios'
 import qiniu, { conf } from 'qiniu'
 
 import config from '../config'
+import download from '../utils/download'
+import ffmpegHandle from '../utils/ffmpeg-handle'
+
 const { AK, SK, bucket } = config
 
 const TestRouter = new Router()
@@ -66,5 +69,9 @@ TestRouter.get('/transform', async (ctx, next) => {
             }
         })
     })
+})
+// ffmpeg转码
+TestRouter.get('/ffmpegTransform', async (ctx, next) => {
+    ffmpegHandle()
 })
 export default TestRouter
