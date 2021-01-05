@@ -7,7 +7,7 @@
         "dev": "webpack --config ./webpack.config.development.js --watch"
     },
     "dependencies": {
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "koa": "^2.8.1",
         "koa-body": "^4.1.1",
         "koa-static": "^5.0.0",
